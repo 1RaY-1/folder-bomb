@@ -1,5 +1,6 @@
 # folder-bomb
 Program that creates lots of directories in a specific directory.
+If some directories already exist, program will notify you about this.
 
 Made just for fun.
 
