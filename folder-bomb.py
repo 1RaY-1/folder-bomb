@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# usage: python3 folder-bomb.py NUMBER-OF-FOLDERS-TO-CREATE AND WERE TO CREATE
+# usage: python3 folder-bomb.py NUMBER-OF-FOLDERS-TO-CREATE(to spam) AND WERE TO CREATE
 
 class Folder_Bomb:
     def __init__(self, folders_limit, target_directory):
@@ -52,7 +52,7 @@ class Folder_Bomb:
         while self.foldername <= self.folders_limit:
             
             try:
-                
+
                 spam.spam()
 
             except KeyboardInterrupt:
@@ -69,7 +69,7 @@ if __name__ == '__main__':
     import logging
     import sys
 
-    logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+    logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
     logging.getLogger().setLevel(logging.INFO)
 
     spam = Folder_Bomb(0, '...')
