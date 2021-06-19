@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
 # usage: python3 folder-bomb.py NUMBER-OF-FOLDERS-TO-CREATE AND WERE TO CREATE
-# example: python3 folder-bomb.py 100 /home/USER/Desktop
-
 
 class Folder_Bomb:
     def __init__(self, folders_limit, target_directory):
