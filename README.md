@@ -1,11 +1,11 @@
 # folder-bomb
-Program that creates lots of folders in a specific directory.
+Program that creates lots of directories in a specific directory.
 
 Made just for fun.
 
 # Usage
 ```
-Usage: python3 folder-bomb.py NUMBER-OF-FOLDERS-TO-CREATE DIRECTORY-WHERE-TO-CREATE-THEM
+python3 folder-bomb.py NUMBER-OF-FOLDERS-TO-CREATE DIRECTORY-WHERE-TO-CREATE-THEM
 ```
 
 # Example
