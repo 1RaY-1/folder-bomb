@@ -26,7 +26,7 @@ class Folder_Bomb:
         os.mkdir(f"{self.target_directory}/{self.foldername}") # if you use Windows, you have to change: ' / ' to ' \\ '
 
         if self.print_logs:
-            logging.info(f"--- Folder '{self.foldername}' created in {self.target_directory}")
+            logging.info(f"--- Folder: '{self.foldername}' created in {self.target_directory}")
 
         self.foldername += 1
         self.created_folders += 1
@@ -34,7 +34,7 @@ class Folder_Bomb:
     def if_keyboard_interrupt(self):
         print()
         if self.print_logs:
-            print
+            print()
             logging.info("--- Program stopped\n")
 
         if self.print_consequence:
@@ -52,7 +52,6 @@ class Folder_Bomb:
         while self.foldername <= self.folders_limit:
             
             try:
-
                 spam.spam()
 
             except KeyboardInterrupt:
@@ -69,7 +68,7 @@ if __name__ == '__main__':
     import logging
     import sys
 
-    logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
+    logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%d/%m/%Y %S:%M:%H')
     logging.getLogger().setLevel(logging.INFO)
 
     spam = Folder_Bomb(0, '...')
