@@ -9,4 +9,4 @@ python3 folder-bomb.py NUMBER-OF-FOLDERS-TO-CREATE DIRECTORY-WHERE-TO-CREATE-THE
 ```
 
 # Example/Screenshot
-![example](https://user-images.githubusercontent.com/78962948/122650552-efb3b000-d133-11eb-824e-a51bb58c1c74.png)
+![example](https://user-images.githubusercontent.com/78962948/122651255-e9273780-d137-11eb-907e-d28a2fc1a60b.png)
