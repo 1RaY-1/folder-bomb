@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 
-# simple python program that creates lots of folders in a specific directory (spam of folders)
-
-# it was made just for fun
-
-# usage: python3 folder-bomb.py NUMBER-OF-FOLDERS-TO-CREATE(to spam) AND WERE TO CREATE
+# usage: python3 folder-bomb.py NUMBER-OF-FOLDERS-TO-CREATE AND WERE TO CREATE
 # example: python3 folder-bomb.py 100 /home/USER/Desktop
 
 
@@ -58,7 +54,7 @@ class Folder_Bomb:
         while self.foldername <= self.folders_limit:
             
             try:
-
+                
                 spam.spam()
 
             except KeyboardInterrupt:
