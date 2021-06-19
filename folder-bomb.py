@@ -68,7 +68,7 @@ if __name__ == '__main__':
     import logging
     import sys
 
-    logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%d/%m/%Y %S:%M:%H')
+    logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
     logging.getLogger().setLevel(logging.INFO)
 
     spam = Folder_Bomb(0, '...')
