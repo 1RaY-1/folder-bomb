@@ -80,5 +80,4 @@ if __name__ == '__main__':
         spam.die()
     else:
         spam = Folder_Bomb(folders_limit, target_directory)
-
-    spam.start_spam()
+        spam.start_spam()
