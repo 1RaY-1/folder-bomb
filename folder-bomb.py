@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 # usage: python3 folder-bomb.py NUMBER-OF-FOLDERS-TO-CREATE(to spam) AND WERE TO CREATE
 
