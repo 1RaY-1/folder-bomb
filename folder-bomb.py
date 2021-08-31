@@ -38,9 +38,9 @@ class Folder_Bomb:
             logging.info("--- Program stopped\n")
 
         if self.print_consequence:
-            spam.func_print_consequence()
+            self.func_print_consequence()
 
-        spam.die()
+        self.die()
 
     def if_file_exists_error(self):
         logging.info(f"--- Folder: '{self.foldername}' already exists in {self.target_directory}")
@@ -52,16 +52,16 @@ class Folder_Bomb:
         while self.foldername <= self.folders_limit:
             
             try:
-                spam.spam()
+                self.spam()
 
             except KeyboardInterrupt:
-                spam.if_keyboard_interrupt()
+                self.if_keyboard_interrupt()
 
             except FileExistsError:
-                spam.if_file_exists_error()
+                self.if_file_exists_error()
 
         if self.print_consequence:
-            spam.func_print_consequence()
+            self.func_print_consequence()
 
 if __name__ == '__main__':
     import os
