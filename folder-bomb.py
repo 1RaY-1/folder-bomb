@@ -2,6 +2,13 @@
 
 # usage: python3 folder-bomb.py NUMBER-OF-FOLDERS-TO-CREATE(to spam) AND WERE TO CREATE
 
+import os
+import logging
+import sys
+
+logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
+logging.getLogger().setLevel(logging.INFO)
+
 class Folder_Bomb:
     def __init__(self, folders_limit, target_directory):
         self.target_directory = target_directory 
@@ -12,7 +19,7 @@ class Folder_Bomb:
         self.print_consequence = True
 
     def usage(self):
-        print("Usage: python3 folder-bomb.py NUMBER-OF-FOLDERS-TO-CREATE DIRECTORY-WHERE-TO-CREATE-THEM")
+        print(f"Usage: python3 {sys.argv[0]} NUMBER-OF-FOLDERS-TO-CREATE DIRECTORY-WHERE-TO-CREATE-THEM")
 
     def die(self):
         sys.exit()
@@ -64,14 +71,8 @@ class Folder_Bomb:
             self.func_print_consequence()
 
 if __name__ == '__main__':
-    import os
-    import logging
-    import sys
-
-    logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
-    logging.getLogger().setLevel(logging.INFO)
-
     spam = Folder_Bomb(0, '...')
+    
     try:
         folders_limit = int(sys.argv[1])
         target_directory = sys.argv[2]
